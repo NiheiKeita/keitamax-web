@@ -14,10 +14,10 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
         {/* Section Header */}
         <AnimatedSection animation="fade-in" className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold text-amber-900 lg:text-5xl">
-            作品一覧
+            アプリ紹介
           </h2>
           <p className="mx-auto max-w-3xl text-xl text-gray-600">
-            これまでに開発したプロジェクトをご紹介します。各プロジェクトは技術的な挑戦とユーザー体験の向上を重視して制作しています。
+            これまでに開発したアプリを一部ご紹介します。使っていただけると嬉しいです。
           </p>
         </AnimatedSection>
 
@@ -36,7 +36,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
             より多くのプロジェクトをご覧になりたい方は、GitHubをご確認ください。
           </p>
           <a
-            href="https://github.com/keitamax"
+            href="https://github.com/NiheiKeita"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 rounded-full bg-amber-700 px-8 py-3 font-medium text-white shadow-lg transition-colors duration-200 hover:bg-amber-800 hover:shadow-xl"

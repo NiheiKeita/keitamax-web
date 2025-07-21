@@ -2,53 +2,77 @@ import { Profile, Project, SocialLink } from '../types'
 
 export const profileData: Profile = {
   name: 'keitaMax',
-  title: 'フルスタックエンジニア',
-  description: 'Webアプリケーション開発に情熱を注ぐフルスタックエンジニアです。TypeScript、React、Next.jsを中心としたモダンな技術スタックで、ユーザー体験を重視したアプリケーションを開発しています。カフェでコーヒーを飲みながらコードを書くのが至福の時間です。',
-  skills: ['TypeScript', 'React', 'Next.js', 'Firebase', 'Laravel', 'TailwindCSS', 'Node.js', 'PostgreSQL'],
-  imageUrl: '/profile.jpg' // 後で画像を追加
+  title: 'WebAPP開発エンジニア',
+  description: 'Webアプリケーション開発に情熱を注ぐエンジニアです。Laravel、PHP, TypeScript、React、Next.jsを中心とした技術を使用してアプリケーションを開発しています。カフェでコーヒーを飲みながらアプリ作成するのが好きです。',
+  skills: ['TypeScript', 'React', 'Next.js', 'Firebase', 'Laravel', 'PHP', 'TailwindCSS', 'Node.js', 'Android', 'Kotlin', 'PostgreSQL'],
+  imageUrl: '/profile.png' // 後で画像を追加
 }
 
 export const projectsData: Project[] = [
   {
     id: '1',
-    title: 'keitamax-web',
-    description: 'カフェ風デザインの自己紹介サイト。Next.jsとTailwindCSSで構築されたモダンなポートフォリオ。',
-    imageUrl: '/projects/keitamax-web.jpg',
-    techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
-    link: 'https://github.com/keitamax/keitamax-web'
+    title: '心のトイレ',
+    description: '日々の仕事や人間関係の中で、ふと傷ついた「言葉」って、案外ずっと心に残りませんか？「言われてムカついた」「何気ない一言で凹んだ」そういったモヤモヤを、トイレに流してスッキリするWebサービスです。',
+    imageUrl: '/projects/toilet.png',
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'Firebase'],
+    link: 'https://throw-toilet.qboad.com/'
   },
   {
     id: '2',
-    title: 'カフェ管理システム',
-    description: 'カフェの在庫管理と売上分析を行うWebアプリケーション。',
-    imageUrl: '/projects/cafe-management.jpg',
-    techStack: ['Laravel', 'Vue.js', 'MySQL'],
-    link: 'https://github.com/keitamax/cafe-management'
+    title: 'たんこまゃんサイト',
+    description: 'たんこまゃんの公式サイトです。アンドウさんなどのキャラクターの説明、Lineスタンプのリンクをまとめています。',
+    imageUrl: '/projects/tankomayann.png',
+    techStack: ['NUxt', 'Vue.js', 'TailwindCSS'],
+    link: 'https://tankomayan.qboad.com/'
   },
   {
     id: '3',
-    title: 'タスク管理アプリ',
-    description: 'シンプルで使いやすいタスク管理アプリ。Firebaseでリアルタイム同期。',
-    imageUrl: '/projects/task-app.jpg',
-    techStack: ['React', 'Firebase', 'TypeScript'],
-    link: 'https://github.com/keitamax/task-app'
+    title: 'アジャイル便利アプリ',
+    description: 'アジャイルをする上で便利なツールを作成しています。プランニングポーカーなどができます。今後、チームでの進捗管理などもできるようにしていきます。',
+    imageUrl: '/projects/agile.png',
+    techStack: ['Next.js', 'Skyway', 'TypeScript', 'TailwindCSS'],
+    link: 'https://agile.qboad.com/'
+  },
+  {
+    id: '4',
+    title: 'あにぐらふ',
+    description: 'アニメのランキングを作成し、シーズンごとのアニメをチェックして、自分のランキングの変化をグラフで楽しめるWEBサイトです。',
+    imageUrl: '/projects/anigraph.png',
+    techStack: ['Laravel', 'Next.js', 'TypeScript', 'TailwindCSS', 'Firebase'],
+    link: 'https://anigraph.qboad.com/'
+  },
+  {
+    id: '5',
+    title: 'KeitaMaxの冒険',
+    description: 'KeitaMaxを操作してボスを倒すことを目指すRPGです。結構難しいです。',
+    imageUrl: '/projects/keitamax_rpg.png',
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    link: 'https://niheikeita.github.io/my-site/'
+  },
+  {
+    id: '6',
+    title: 'ひたすら因数分解(Android)',
+    description: 'ひたすら因数分解を解くAndroidアプリです。',
+    imageUrl: '/projects/innsuubunkai.png',
+    techStack: ['Android', 'Kotlin'],
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai&hl=ja'
   }
 ]
 
 export const socialLinks: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/keitamax',
-    icon: 'github'
+    url: 'https://github.com/NiheiKeita/',
+    icon: '/logo/github-mark-white.svg'
   },
   {
     name: 'X (Twitter)',
-    url: 'https://x.com/keitamax',
-    icon: 'twitter'
+    url: 'https://x.com/keita__Max',
+    icon: '/logo/twitter.svg'
   },
   {
-    name: 'ブログ',
-    url: 'https://blog.keitamax.dev',
-    icon: 'blog'
+    name: 'Qiita',
+    url: 'https://qiita.com/keitaMax',
+    icon: '/logo/qiita-icon.png'
   }
 ] 
