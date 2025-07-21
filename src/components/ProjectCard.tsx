@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-amber-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+    <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-amber-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <img
@@ -23,12 +23,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
 
       {/* Content */}
-      <div className="space-y-4 p-6">
+      <div className="flex flex-1 flex-col space-y-4 p-6">
         <h3 className="text-xl font-bold text-amber-900 transition-colors duration-200 group-hover:text-amber-700">
           {project.title}
         </h3>
 
-        <p className="leading-relaxed text-gray-600">
+        <p className="flex-1 leading-relaxed text-gray-600">
           {project.description}
         </p>
 

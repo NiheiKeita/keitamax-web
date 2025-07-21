@@ -22,9 +22,9 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
         </AnimatedSection>
 
         {/* Projects Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid auto-rows-fr gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <AnimatedSection key={project.id} animation="slide-up" delay={index * 200}>
+            <AnimatedSection key={project.id} animation="slide-up" delay={index * 200} className="h-full">
               <ProjectCard project={project} />
             </AnimatedSection>
           ))}
