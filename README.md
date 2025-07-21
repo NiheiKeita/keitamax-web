@@ -1,4 +1,4 @@
-# ☕ keitaMax - カフェ風自己紹介サイト
+# ☕ ケイタMax - カフェ風自己紹介サイト
 
 [![codecov](https://codecov.io/gh/NiheiKeita/next-example-app/graph/badge.svg?token=MY9YAIW9F6)](https://codecov.io/gh/NiheiKeita/next-example-app)
 
@@ -84,7 +84,7 @@ src/
 以下の画像を`public/`ディレクトリに配置してください：
 
 - `profile.jpg` - プロフィール画像（400x400px以上推奨）
-- `projects/keitamax-web.jpg` - プロジェクトサムネイル
+- `projects/-web.jpg` - プロジェクトサムネイル
 - `projects/cafe-management.jpg` - プロジェクトサムネイル
 - `projects/task-app.jpg` - プロジェクトサムネイル
 
@@ -129,8 +129,6 @@ MIT License
 
 ## ☕ 作者
 
-keitaMax - フルスタックエンジニア
+ケイタMax - エンジニア
 
 ---
-
-*Made with ☕ and ❤️*

@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
           {/* Logo and Copyright */}
           <div className="mb-6 flex items-center space-x-2 md:mb-0">
             <Coffee className="size-6 text-amber-300" />
-            <span className="text-xl font-bold">keitaMax</span>
+            <span className="text-xl font-bold">ケイタMax</span>
           </div>
 
           {/* Social Links */}

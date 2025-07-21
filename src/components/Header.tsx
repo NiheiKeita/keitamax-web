@@ -21,8 +21,8 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-white/90 shadow-lg backdrop-blur-md'
-          : 'bg-transparent'
+        ? 'bg-white/90 shadow-lg backdrop-blur-md'
+        : 'bg-transparent'
         }`}
     >
       <div className="container mx-auto px-6 py-4">
@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Coffee className="size-8 text-amber-700" />
-            <span className="text-2xl font-bold text-amber-900">keitaMax</span>
+            <span className="text-2xl font-bold text-amber-900">ケイタMax</span>
           </div>
 
           {/* Navigation */}

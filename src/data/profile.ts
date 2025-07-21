@@ -1,7 +1,7 @@
 import { Profile, Project, SocialLink } from '../types'
 
 export const profileData: Profile = {
-  name: 'keitaMax',
+  name: 'ケイタMax',
   title: 'WebAPP開発エンジニア',
   description: 'Webアプリケーション開発に情熱を注ぐエンジニアです。Laravel、PHP, TypeScript、React、Next.jsを中心とした技術を使用してアプリケーションを開発しています。カフェでコーヒーを飲みながらアプリ作成するのが好きです。',
   skills: ['TypeScript', 'React', 'Next.js', 'Firebase', 'Laravel', 'PHP', 'TailwindCSS', 'Node.js', 'Android', 'Kotlin', 'PostgreSQL'],
@@ -43,8 +43,8 @@ export const projectsData: Project[] = [
   },
   {
     id: '5',
-    title: 'KeitaMaxの冒険',
-    description: 'KeitaMaxを操作してボスを倒すことを目指すRPGです。結構難しいです。',
+    title: 'KケイタMaxの冒険',
+    description: 'ケイタMaxを操作してボスを倒すことを目指すRPGです。結構難しいです。',
     imageUrl: '/projects/keitamax_rpg.png',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
     link: 'https://niheikeita.github.io/my-site/'
