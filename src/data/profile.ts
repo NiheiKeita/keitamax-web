@@ -43,7 +43,7 @@ export const projectsData: Project[] = [
   },
   {
     id: '5',
-    title: 'KケイタMaxの冒険',
+    title: 'ケイタMaxの冒険',
     description: 'ケイタMaxを操作してボスを倒すことを目指すRPGです。結構難しいです。',
     imageUrl: '/projects/keitamax_rpg.png',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
@@ -53,10 +53,34 @@ export const projectsData: Project[] = [
     id: '6',
     title: 'ひたすら因数分解(Android)',
     description: 'ひたすら因数分解を解くAndroidアプリです。',
-    imageUrl: '/projects/innsuubunkai.png',
+    imageUrl: '/projects/innsuubunkai.webp',
     techStack: ['Android', 'Kotlin'],
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai&hl=ja'
-  }
+  },
+  {
+    id: '7',
+    title: 'ひたすら素因数分解(Android)',
+    description: 'ひたすら素因数分解を解くAndroidアプリです。',
+    imageUrl: '/projects/soinnsuubunkai.webp',
+    techStack: ['Android', 'Kotlin'],
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.soinnsuubunnkai&hl=ja'
+  },
+  {
+    id: '8',
+    title: 'ひたすら微分(Android)',
+    description: 'ひたすら微分を解くAndroidアプリです。',
+    imageUrl: '/projects/bibunn.webp',
+    techStack: ['Android', 'Kotlin'],
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibun&hl=ja'
+  },
+  {
+    id: '9',
+    title: 'ひたすら積分(Android)',
+    description: 'ひたすら積分を解くAndroidアプリです。',
+    imageUrl: '/projects/sekibun.webp',
+    techStack: ['Android', 'Kotlin'],
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.sekibunn&hl=ja'
+  },
 ]
 
 export const socialLinks: SocialLink[] = [
