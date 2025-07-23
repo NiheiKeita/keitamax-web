@@ -22,7 +22,7 @@ export const projectsData: Project[] = [
     title: 'たんこまゃんサイト',
     description: 'たんこまゃんの公式サイトです。アンドウさんなどのキャラクターの説明、Lineスタンプのリンクをまとめています。',
     imageUrl: '/projects/tankomayann.png',
-    techStack: ['NUxt', 'Vue.js', 'TailwindCSS'],
+    techStack: ['Nuxt', 'Vue.js', 'TailwindCSS'],
     link: 'https://tankomayan.qboad.com/'
   },
   {
@@ -71,7 +71,7 @@ export const projectsData: Project[] = [
     description: 'ひたすら微分を解くAndroidアプリです。',
     imageUrl: '/projects/bibunn.webp',
     techStack: ['Android', 'Kotlin'],
-    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibun&hl=ja'
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibunn&hl=ja'
   },
   {
     id: '9',

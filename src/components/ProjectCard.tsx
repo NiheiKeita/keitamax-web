@@ -59,7 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
 
       {/* Hover overlay */}
-      <div className="absolute inset-0 bg-amber-900/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+      {/* <div className="absolute inset-0 bg-amber-900/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div> */}
     </div>
   )
 }
