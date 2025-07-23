@@ -50,7 +50,7 @@ export const projectsData: Project[] = [
     link: 'https://niheikeita.github.io/my-site/'
   },
   {
-    id: '6',
+    id: '100',
     title: 'ひたすら因数分解(Android)',
     description: 'ひたすら因数分解を解くAndroidアプリです。',
     imageUrl: '/projects/innsuubunkai.webp',
@@ -58,7 +58,7 @@ export const projectsData: Project[] = [
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai&hl=ja'
   },
   {
-    id: '7',
+    id: '101',
     title: 'ひたすら素因数分解(Android)',
     description: 'ひたすら素因数分解を解くAndroidアプリです。',
     imageUrl: '/projects/soinnsuubunkai.webp',
@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.soinnsuubunnkai&hl=ja'
   },
   {
-    id: '8',
+    id: '102',
     title: 'ひたすら微分(Android)',
     description: 'ひたすら微分を解くAndroidアプリです。',
     imageUrl: '/projects/bibunn.webp',
@@ -74,12 +74,20 @@ export const projectsData: Project[] = [
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibunn&hl=ja'
   },
   {
-    id: '9',
+    id: '103',
     title: 'ひたすら積分(Android)',
     description: 'ひたすら積分を解くAndroidアプリです。',
     imageUrl: '/projects/sekibun.webp',
     techStack: ['Android', 'Kotlin'],
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.sekibunn&hl=ja'
+  },
+  {
+    id: '104',
+    title: '鬼封じの縄(Android)',
+    description: '近所で悪さをする鬼を、捕えて懲らしめよう。見事捕まえることができたらいいことがあるかも。そんなゲーム。',
+    imageUrl: '/projects/onihuujinonawa.webp',
+    techStack: ['Android', 'Kotlin'],
+    link: 'https://play.google.com/store/apps/details?id=com.iggy.catchthedemon&hl=ja'
   },
 ]
 
