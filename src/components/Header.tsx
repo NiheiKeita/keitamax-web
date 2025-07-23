@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Coffee } from 'lucide-react'
 
 interface HeaderProps {
+  // eslint-disable-next-line no-unused-vars
   onNavClick: (section: string) => void
 }
 
