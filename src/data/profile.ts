@@ -50,6 +50,14 @@ export const projectsData: Project[] = [
     link: 'https://niheikeita.github.io/my-site/'
   },
   {
+    id: '6',
+    title: 'さけびな',
+    description: '感情を叫びたいのに声にできない人のための、匿名で叫びを投稿できるWEBアプリです。',
+    imageUrl: '/projects/sakebina.png',
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    link: 'https://sakebina.qboad.com/'
+  },
+  {
     id: '100',
     title: 'ひたすら因数分解(Android)',
     description: 'ひたすら因数分解を解くAndroidアプリです。',
