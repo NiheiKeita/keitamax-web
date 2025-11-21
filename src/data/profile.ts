@@ -58,6 +58,22 @@ export const projectsData: Project[] = [
     link: 'https://sakebina.qboad.com/'
   },
   {
+    id: '7',
+    title: '技術書読書ログ',
+    description: '技術書のインプットを見える化ができるアプリです。',
+    imageUrl: '/projects/booklog.png',
+    techStack: ['Laravel', 'Next.js', 'TypeScript', 'TailwindCSS'],
+    link: 'https://book-log.qboad.com/'
+  },
+  {
+    id: '8',
+    title: 'ゲームセンター筐体データベース',
+    description: 'メダルゲーム・クレーンゲームの情報を管理・共有するプラットフォームです。',
+    imageUrl: '/projects/gamedb.png',
+    techStack: ['Laravel', 'Next.js', 'TypeScript', 'TailwindCSS'],
+    link: 'https://gamedex.qboad.com/'
+  },
+  {
     id: '100',
     title: 'ひたすら因数分解(Android)',
     description: 'ひたすら因数分解を解くAndroidアプリです。',
