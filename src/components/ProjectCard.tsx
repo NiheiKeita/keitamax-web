@@ -4,9 +4,12 @@ import { ExternalLink } from 'lucide-react'
 
 interface ProjectCardProps {
   project: Project
+  linkLabel?: string
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, linkLabel }) => {
+  const label = linkLabel ?? 'プロジェクトを見る'
+
   return (
     <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-amber-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
       {/* Image */}
@@ -52,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 font-medium text-amber-700 transition-colors duration-200 hover:text-amber-900"
           >
-            <span>プロジェクトを見る</span>
+            <span>{label}</span>
             <ExternalLink className="size-4" />
           </a>
         </div>

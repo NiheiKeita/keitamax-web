@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Profile } from '../types'
 import AnimatedSection from './AnimatedSection'
 
@@ -33,6 +34,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ profile }) => {
               <p className="max-w-2xl text-lg leading-relaxed text-gray-700">
                 {profile.description}
               </p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-in" delay={520} className="flex flex-wrap gap-4">
+              <Link
+                href="/apps"
+                className="inline-flex items-center rounded-full bg-amber-700 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-colors duration-200 hover:bg-amber-800"
+              >
+                Android / iOS アプリ一覧
+              </Link>
             </AnimatedSection>
 
             {/* Skills */}

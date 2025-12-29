@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { Coffee } from 'lucide-react'
 
 interface HeaderProps {
@@ -48,6 +49,12 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
             >
               作品一覧
             </button>
+            <Link
+              href="/apps"
+              className="font-medium text-amber-900 transition-colors duration-200 hover:text-amber-700"
+            >
+              アプリ一覧
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
