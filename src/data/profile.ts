@@ -130,5 +130,10 @@ export const socialLinks: SocialLink[] = [
     name: 'Qiita',
     url: 'https://qiita.com/keitaMax',
     icon: '/logo/qiita-icon.png'
+  },
+  {
+    name: 'Zenn',
+    url: 'https://zenn.dev/keita_max?tab=books',
+    icon: '/logo/logo-only.svg'
   }
-] 
+]

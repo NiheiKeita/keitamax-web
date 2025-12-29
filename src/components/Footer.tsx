@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
                 className="text-amber-200 transition-colors duration-200 hover:text-white"
                 aria-label={link.name}
               >
-                <img src={link.icon} alt="Twitter" className="size-6" />
+                <img src={link.icon} alt={link.name} className="size-6" />
               </a>
             ))}
           </div>
