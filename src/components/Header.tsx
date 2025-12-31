@@ -9,6 +9,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +20,11 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const handleMobileNavClick = (section: string) => {
+    onNavClick(section)
+    setIsMobileMenuOpen(false)
+  }
 
   return (
     <header
@@ -58,11 +64,44 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
           </nav>
 
           {/* Mobile menu button */}
-          <button className="text-amber-900 md:hidden">
+          <button
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded={isMobileMenuOpen}
+            className="text-amber-900 md:hidden"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          >
             <svg className="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
+        </div>
+
+        {/* Mobile menu panel */}
+        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+          <div className="mt-3 rounded-xl border border-amber-100 bg-white/95 p-4 shadow-lg backdrop-blur-md">
+            <div className="flex flex-col space-y-3">
+              <button
+                onClick={() => handleMobileNavClick('about')}
+                className="text-left font-medium text-amber-900 transition-colors duration-200 hover:text-amber-700"
+              >
+                自己紹介
+              </button>
+              <button
+                onClick={() => handleMobileNavClick('projects')}
+                className="text-left font-medium text-amber-900 transition-colors duration-200 hover:text-amber-700"
+              >
+                作品一覧
+              </button>
+              <Link
+                href="/apps"
+                className="font-medium text-amber-900 transition-colors duration-200 hover:text-amber-700"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                アプリ一覧
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </header>
