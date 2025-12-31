@@ -10,6 +10,14 @@ export const profileData: Profile = {
 
 export const projectsData: Project[] = [
   {
+    id: 'hitasura_math',
+    title: 'ひたすら数学（Android）',
+    description: 'ひたすら数学を解くAndroidアプリです。因数分解、素因数分解、など、多くの問題を収録しています。数学の練習に最適です。今後安比デートでさまざまな機能を追加予定です。',
+    imageUrl: '/projects/hitasura_math.png',
+    techStack: ['Laravel', 'React', 'TypeScript', 'TailwindCSS', 'Flutter', 'Kotlin'],
+    link: 'https://hitasura-math.qboad.com/'
+  },
+  {
     id: '1',
     title: '心のトイレ',
     description: '日々の仕事や人間関係の中で、ふと傷ついた「言葉」って、案外ずっと心に残りませんか？「言われてムカついた」「何気ない一言で凹んだ」そういったモヤモヤを、トイレに流してスッキリするWebサービスです。',
