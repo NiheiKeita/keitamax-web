@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { SocialLink } from '../types'
 import { Coffee } from 'lucide-react'
 
@@ -7,7 +8,6 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
-
   return (
     <footer className="bg-amber-900 py-12 text-white">
       <div className="container mx-auto px-6">
@@ -29,7 +29,13 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
                 className="text-amber-200 transition-colors duration-200 hover:text-white"
                 aria-label={link.name}
               >
-                <img src={link.icon} alt={link.name} className="size-6" />
+                <Image
+                  src={link.icon}
+                  alt={link.name}
+                  width={24}
+                  height={24}
+                  className="size-6"
+                />
               </a>
             ))}
           </div>

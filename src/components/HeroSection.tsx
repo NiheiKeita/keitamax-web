@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Profile } from '../types'
 import AnimatedSection from './AnimatedSection'
 
@@ -64,15 +65,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ profile }) => {
           <AnimatedSection animation="slide-left" delay={300} className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="size-80 rounded-full bg-gradient-to-br from-amber-200 to-amber-400 p-2">
-                <div className="size-full overflow-hidden rounded-full bg-white">
-                  <img
+                <div className="relative size-full overflow-hidden rounded-full bg-white">
+                  <Image
                     src={profile.imageUrl}
                     alt={profile.name}
-                    className="size-full object-cover"
-                    onError={(e) => {
-                      // フォールバック画像
-                      e.currentTarget.src = 'https://via.placeholder.com/320x320/8B4513/FFFFFF?text=keitaMax'
-                    }}
+                    fill
+                    priority
+                    sizes="(min-width: 1024px) 20rem, 16rem"
+                    className="object-cover"
                   />
                 </div>
               </div>
