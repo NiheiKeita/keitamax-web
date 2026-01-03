@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Project } from '../types'
 import { ExternalLink } from 'lucide-react'
 
@@ -14,13 +15,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, linkLabel }) => {
     <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-amber-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
-        <img
+        <Image
           src={project.imageUrl}
           alt={project.title}
-          className="size-full object-cover transition-transform duration-300 group-hover:scale-110"
-          onError={(e) => {
-            e.currentTarget.src = 'https://via.placeholder.com/400x200/8B4513/FFFFFF?text=Project'
-          }}
+          fill
+          sizes="(min-width: 1024px) 24rem, 100vw"
+          className="object-cover transition-transform duration-300 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
       </div>
