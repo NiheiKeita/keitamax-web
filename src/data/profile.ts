@@ -14,8 +14,16 @@ export const projectsData: Project[] = [
     title: 'ひたすら数学（Android）',
     description: 'ひたすら数学を解くAndroidアプリです。因数分解、素因数分解、など、多くの問題を収録しています。数学の練習に最適です。今後さまざまな機能を追加予定です。',
     imageUrl: '/projects/hitasura_math.png',
-    techStack: ['Laravel', 'React', 'TypeScript', 'TailwindCSS', 'Flutter', 'Kotlin'],
+    techStack: ['Laravel', 'React', 'TypeScript', 'TailwindCSS', 'Flutter', 'Kotlin', 'Android'],
     link: 'https://hitasura-math.qboad.com/'
+  },
+  {
+    id: 'hitasura_info',
+    title: 'ひたすら情報（Android）',
+    description: 'ひたすら情報を解くAndroidアプリです。情報Ⅰの問題を収録しています。情報の練習に最適です。今後さまざまな機能を追加予定です。',
+    imageUrl: '/projects/hitasura_info.png',
+    techStack: ['Laravel', 'React', 'TypeScript', 'TailwindCSS', 'Flutter', 'Kotlin', 'Android'],
+    link: 'https://hitasura-info.qboad.com/'
   },
   {
     id: '1',
