@@ -7,12 +7,14 @@ interface ProjectCardProps {
   project: Project
   linkLabel?: string
   showStoreLinks?: boolean
+  showTechStack?: boolean
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
   linkLabel,
-  showStoreLinks = false
+  showStoreLinks = false,
+  showTechStack = true
 }) => {
   const label = linkLabel ?? 'プロジェクトを見る'
   const hasStoreLinks =
@@ -43,58 +45,62 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </p>
 
         {/* Tech Stack */}
-        <div className="flex flex-wrap gap-2">
-          {project.techStack.map((tech, index) => (
-            <span
-              key={index}
-              className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
+        {showTechStack ? (
+          <div className="flex flex-wrap gap-2">
+            {project.techStack.map((tech, index) => (
+              <span
+                key={index}
+                className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        ) : null}
 
         {/* Link */}
         {showStoreLinks && hasStoreLinks ? (
-          <div className="flex flex-wrap items-center gap-3 pt-2">
-            {project.appStoreUrl ? (
-              <a
-                href={project.appStoreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform duration-200 hover:scale-[1.02]"
-              >
-                <Image
-                  src="/logo/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"
-                  alt="App Storeで入手"
-                  width={160}
-                  height={48}
-                  className="h-10 w-auto"
-                />
-              </a>
-            ) : null}
-            {project.googlePlayUrl ? (
-              <a
-                href={project.googlePlayUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform duration-200 hover:scale-[1.02]"
-              >
-                <Image
-                  src="/logo/GetItOnGooglePlay_Badge_Web_color_Japanese.svg"
-                  alt="Google Playで手に入れよう"
-                  width={160}
-                  height={48}
-                  className="h-10 w-auto"
-                />
-              </a>
-            ) : null}
+          <div className="flex flex-col gap-3 pt-2">
+            <div className="flex flex-wrap items-center gap-3 md:flex-nowrap md:gap-2">
+              {project.appStoreUrl ? (
+                <a
+                  href={project.appStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0 transition-transform duration-200 hover:scale-[1.02]"
+                >
+                  <Image
+                    src="/logo/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"
+                    alt="App Storeで入手"
+                    width={140}
+                    height={42}
+                    className="h-9 w-auto md:h-9"
+                  />
+                </a>
+              ) : null}
+              {project.googlePlayUrl ? (
+                <a
+                  href={project.googlePlayUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0 transition-transform duration-200 hover:scale-[1.02]"
+                >
+                  <Image
+                    src="/logo/GetItOnGooglePlay_Badge_Web_color_Japanese.svg"
+                    alt="Google Playで手に入れよう"
+                    width={140}
+                    height={42}
+                    className="h-9 w-auto md:h-9"
+                  />
+                </a>
+              ) : null}
+            </div>
             {project.websiteUrl ? (
               <a
                 href={project.websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-amber-700 bg-amber-900 px-4 py-2 text-sm font-semibold text-amber-50 shadow-sm transition-colors duration-200 hover:border-amber-800 hover:bg-amber-800"
+                className="inline-flex items-center gap-2 self-start rounded-full border border-amber-700 bg-amber-900 px-2.5 py-1 text-xs font-semibold text-amber-50 shadow-sm transition-colors duration-200 hover:border-amber-800 hover:bg-amber-800"
               >
                 <span>Webサイト</span>
                 <ExternalLink className="size-4" />

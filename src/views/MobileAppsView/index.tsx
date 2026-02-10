@@ -56,7 +56,7 @@ const MobileAppsView: React.FC = () => {
             <div className="grid auto-rows-fr gap-8 md:grid-cols-2 lg:grid-cols-3">
               {mobileApps.map((project) => (
                 <AnimatedSection key={project.id} animation="slide-up" className="h-full">
-                  <ProjectCard project={project} showStoreLinks />
+                  <ProjectCard project={project} showStoreLinks showTechStack={false} />
                 </AnimatedSection>
               ))}
             </div>

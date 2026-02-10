@@ -59,7 +59,7 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
               href="/apps"
               className="font-medium text-amber-900 transition-colors duration-200 hover:text-amber-700"
             >
-              アプリ一覧
+              スマホアプリ一覧
             </Link>
           </nav>
 
@@ -98,7 +98,7 @@ const Header: React.FC<HeaderProps> = ({ onNavClick }) => {
                 className="font-medium text-amber-900 transition-colors duration-200 hover:text-amber-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                アプリ一覧
+                スマホアプリ一覧
               </Link>
             </div>
           </div>
