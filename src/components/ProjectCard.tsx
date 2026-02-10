@@ -6,10 +6,17 @@ import { ExternalLink } from 'lucide-react'
 interface ProjectCardProps {
   project: Project
   linkLabel?: string
+  showStoreLinks?: boolean
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, linkLabel }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  project,
+  linkLabel,
+  showStoreLinks = false
+}) => {
   const label = linkLabel ?? 'プロジェクトを見る'
+  const hasStoreLinks =
+    !!project.appStoreUrl || !!project.googlePlayUrl || !!project.websiteUrl
 
   return (
     <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-amber-100 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
@@ -48,17 +55,65 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, linkLabel }) => {
         </div>
 
         {/* Link */}
-        <div className="pt-2">
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center space-x-2 font-medium text-amber-700 transition-colors duration-200 hover:text-amber-900"
-          >
-            <span>{label}</span>
-            <ExternalLink className="size-4" />
-          </a>
-        </div>
+        {showStoreLinks && hasStoreLinks ? (
+          <div className="flex flex-wrap items-center gap-3 pt-2">
+            {project.appStoreUrl ? (
+              <a
+                href={project.appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-200 hover:scale-[1.02]"
+              >
+                <Image
+                  src="/logo/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg"
+                  alt="App Storeで入手"
+                  width={160}
+                  height={48}
+                  className="h-10 w-auto"
+                />
+              </a>
+            ) : null}
+            {project.googlePlayUrl ? (
+              <a
+                href={project.googlePlayUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-200 hover:scale-[1.02]"
+              >
+                <Image
+                  src="/logo/GetItOnGooglePlay_Badge_Web_color_Japanese.svg"
+                  alt="Google Playで手に入れよう"
+                  width={160}
+                  height={48}
+                  className="h-10 w-auto"
+                />
+              </a>
+            ) : null}
+            {project.websiteUrl ? (
+              <a
+                href={project.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-amber-700 bg-amber-900 px-4 py-2 text-sm font-semibold text-amber-50 shadow-sm transition-colors duration-200 hover:border-amber-800 hover:bg-amber-800"
+              >
+                <span>Webサイト</span>
+                <ExternalLink className="size-4" />
+              </a>
+            ) : null}
+          </div>
+        ) : (
+          <div className="pt-2">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 font-medium text-amber-700 transition-colors duration-200 hover:text-amber-900"
+            >
+              <span>{label}</span>
+              <ExternalLink className="size-4" />
+            </a>
+          </div>
+        )}
       </div>
 
       {/* Hover overlay */}

@@ -11,19 +11,25 @@ export const profileData: Profile = {
 export const projectsData: Project[] = [
   {
     id: 'hitasura_math',
-    title: 'ひたすら数学（Android）',
-    description: 'ひたすら数学を解くAndroidアプリです。因数分解、素因数分解、など、多くの問題を収録しています。数学の練習に最適です。今後さまざまな機能を追加予定です。',
+    title: 'ひたすら数学',
+    description: 'ひたすら数学を解くスマホアプリです。因数分解、素因数分解、など、多くの問題を収録しています。数学の練習に最適です。今後さまざまな機能を追加予定です。',
     imageUrl: '/projects/hitasura_math.png',
-    techStack: ['Laravel', 'React', 'TypeScript', 'TailwindCSS', 'Flutter', 'Kotlin', 'Android'],
-    link: 'https://hitasura-math.qboad.com/'
+    techStack: ['Laravel', 'React', 'TypeScript', 'TailwindCSS', 'Flutter', 'Kotlin', 'Android', 'iOS'],
+    link: 'https://hitasura-math.qboad.com/',
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%95%B0%E5%AD%A6/id6757374941',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.qboad.hitasura_math',
+    websiteUrl: 'https://hitasura-math.qboad.com/'
   },
   {
     id: 'hitasura_info',
-    title: 'ひたすら情報（Android）',
-    description: 'ひたすら情報を解くAndroidアプリです。情報Ⅰの問題を収録しています。情報の練習に最適です。今後さまざまな機能を追加予定です。',
+    title: 'ひたすら情報',
+    description: 'ひたすら情報を解くスマホアプリです。情報Ⅰの問題を収録しています。情報の練習に最適です。今後さまざまな機能を追加予定です。',
     imageUrl: '/projects/hitasura_info.png',
-    techStack: ['Laravel', 'React', 'TypeScript', 'TailwindCSS', 'Flutter', 'Kotlin', 'Android'],
-    link: 'https://hitasura-info.qboad.com/'
+    techStack: ['Laravel', 'React', 'TypeScript', 'TailwindCSS', 'Flutter', 'Kotlin', 'Android', 'iOS'],
+    link: 'https://hitasura-info.qboad.com/',
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%83%85%E5%A0%B1/id6757374807',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.qboad.hitasura_information',
+    websiteUrl: 'https://hitasura-info.qboad.com/'
   },
   {
     id: '1',
@@ -91,11 +97,13 @@ export const projectsData: Project[] = [
   },
   {
     id: '100',
-    title: 'ひたすら因数分解(Android)',
-    description: 'ひたすら因数分解を解くAndroidアプリです。',
+    title: 'ひたすら因数分解',
+    description: 'ひたすら因数分解を解くアプリです。',
     imageUrl: '/projects/innsuubunkai.webp',
     techStack: ['Android', 'Kotlin'],
-    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai&hl=ja'
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai',
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3/id6758726429',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai'
   },
   {
     id: '101',
@@ -103,7 +111,8 @@ export const projectsData: Project[] = [
     description: 'ひたすら素因数分解を解くAndroidアプリです。',
     imageUrl: '/projects/soinnsuubunkai.webp',
     techStack: ['Android', 'Kotlin'],
-    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.soinnsuubunnkai&hl=ja'
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.soinnsuubunnkai&hl=ja',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.soinnsuubunnkai&hl=ja'
   },
   {
     id: '102',
@@ -111,7 +120,8 @@ export const projectsData: Project[] = [
     description: 'ひたすら微分を解くAndroidアプリです。',
     imageUrl: '/projects/bibunn.webp',
     techStack: ['Android', 'Kotlin'],
-    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibunn&hl=ja'
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibunn&hl=ja',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibunn&hl=ja'
   },
   {
     id: '103',
@@ -119,7 +129,27 @@ export const projectsData: Project[] = [
     description: 'ひたすら積分を解くAndroidアプリです。',
     imageUrl: '/projects/sekibun.webp',
     techStack: ['Android', 'Kotlin'],
-    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.sekibunn&hl=ja'
+    link: 'https://play.google.com/store/apps/details?id=com.iggyapp.sekibunn&hl=ja',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.sekibunn&hl=ja'
+  },
+  {
+    id: '105',
+    title: 'ひたすら最小公倍数',
+    description: 'ひたすら最小公倍数を解くスマホアプリです。',
+    imageUrl: '/projects/lcm.png',
+    techStack: ['iOS'],
+    link: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/id6758604047',
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/id6758604047',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.qboad.hitasura.lcm'
+  },
+  {
+    id: '106',
+    title: 'ひたすら最大公約数',
+    description: 'ひたすら最大公約数を解くiOSアプリです。',
+    imageUrl: '/projects/gcd.png',
+    techStack: ['iOS'],
+    link: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%A4%A7%E5%85%AC%E7%B4%84%E6%95%B0/id6758605688',
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%A4%A7%E5%85%AC%E7%B4%84%E6%95%B0/id6758605688'
   },
   {
     id: '104',
@@ -127,7 +157,8 @@ export const projectsData: Project[] = [
     description: '近所で悪さをする鬼を、捕えて懲らしめよう。見事捕まえることができたらいいことがあるかも。そんなゲーム。',
     imageUrl: '/projects/onihuujinonawa.webp',
     techStack: ['Android', 'Kotlin'],
-    link: 'https://play.google.com/store/apps/details?id=com.iggy.catchthedemon&hl=ja'
+    link: 'https://play.google.com/store/apps/details?id=com.iggy.catchthedemon&hl=ja',
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggy.catchthedemon&hl=ja'
   },
 ]
 

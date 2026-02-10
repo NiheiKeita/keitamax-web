@@ -13,6 +13,9 @@ export interface Project {
   imageUrl: string
   techStack: string[]
   link: string
+  appStoreUrl?: string
+  googlePlayUrl?: string
+  websiteUrl?: string
 }
 
 export interface SocialLink {
