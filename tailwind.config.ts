@@ -15,6 +15,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        turquoise: { DEFAULT: '#0FADA3', dark: '#0B8C84' },
+        cream: '#FBFAF5',
+        mint: '#DFF3EE',
+        coral: '#FF7A68',
+        ink: '#17313A',
         'cafe': {
           50: '#fefce8',
           100: '#fef9c3',

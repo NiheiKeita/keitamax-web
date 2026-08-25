@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { Project } from '../types'
 import { ExternalLink } from 'lucide-react'
@@ -36,9 +37,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       {/* Content */}
       <div className="flex flex-1 flex-col space-y-4 p-6">
-        <h3 className="text-xl font-bold text-amber-900 transition-colors duration-200 group-hover:text-amber-700">
-          {project.title}
-        </h3>
+        <div className="flex items-start justify-between gap-2">
+          <h3 className="text-xl font-bold text-amber-900 transition-colors duration-200 group-hover:text-amber-700">
+            {project.title}
+          </h3>
+          {project.detailSlug ? (
+            <Link
+              href={`/${project.category}/${project.detailSlug}`}
+              className="shrink-0 rounded-full border border-amber-200 px-3 py-1 text-xs font-semibold text-amber-700 transition-colors duration-200 hover:border-amber-400 hover:bg-amber-50"
+            >
+              くわしく見る
+            </Link>
+          ) : null}
+        </div>
 
         <p className="flex-1 leading-relaxed text-gray-600">
           {project.description}

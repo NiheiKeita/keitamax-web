@@ -44,6 +44,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ profile }) => {
               >
                 Android / iOS アプリ一覧
               </Link>
+              <Link
+                href="/web"
+                className="inline-flex items-center rounded-full border border-amber-700 px-6 py-3 text-sm font-semibold text-amber-800 transition-colors duration-200 hover:bg-amber-50"
+              >
+                Webサービス一覧
+              </Link>
             </AnimatedSection>
 
             {/* Skills */}

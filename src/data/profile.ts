@@ -18,7 +18,10 @@ export const projectsData: Project[] = [
     link: 'https://hitasura-math.qboad.com/',
     appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%95%B0%E5%AD%A6/id6757374941',
     googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.qboad.hitasura_math',
-    websiteUrl: 'https://hitasura-math.qboad.com/'
+    websiteUrl: 'https://hitasura-math.qboad.com/',
+    category: 'app',
+    detailSlug: 'hitasura-math',
+    seriesId: 'hitasura'
   },
   {
     id: 'hitasura_info',
@@ -29,7 +32,10 @@ export const projectsData: Project[] = [
     link: 'https://hitasura-info.qboad.com/',
     appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%83%85%E5%A0%B1/id6757374807',
     googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.qboad.hitasura_information',
-    websiteUrl: 'https://hitasura-info.qboad.com/'
+    websiteUrl: 'https://hitasura-info.qboad.com/',
+    category: 'app',
+    detailSlug: 'hitasura-info',
+    seriesId: 'hitasura'
   },
   {
     id: '1',
@@ -37,7 +43,9 @@ export const projectsData: Project[] = [
     description: '日々の仕事や人間関係の中で、ふと傷ついた「言葉」って、案外ずっと心に残りませんか？「言われてムカついた」「何気ない一言で凹んだ」そういったモヤモヤを、トイレに流してスッキリするWebサービスです。',
     imageUrl: '/projects/toilet.png',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'Firebase'],
-    link: 'https://throw-toilet.qboad.com/'
+    link: 'https://throw-toilet.qboad.com/',
+    category: 'web',
+    detailSlug: 'kokoro-toilet'
   },
   {
     id: '2',
@@ -45,7 +53,8 @@ export const projectsData: Project[] = [
     description: 'たんこまゃんの公式サイトです。アンドウさんなどのキャラクターの説明、Lineスタンプのリンクをまとめています。',
     imageUrl: '/projects/tankomayann.png',
     techStack: ['Nuxt', 'Vue.js', 'TailwindCSS'],
-    link: 'https://tankomayan.qboad.com/'
+    link: 'https://tankomayan.qboad.com/',
+    category: 'web'
   },
   {
     id: '3',
@@ -53,7 +62,8 @@ export const projectsData: Project[] = [
     description: 'アジャイルをする上で便利なツールを作成しています。プランニングポーカーなどができます。今後、チームでの進捗管理などもできるようにしていきます。',
     imageUrl: '/projects/agile.png',
     techStack: ['Next.js', 'Skyway', 'TypeScript', 'TailwindCSS'],
-    link: 'https://agile.qboad.com/'
+    link: 'https://agile.qboad.com/',
+    category: 'web'
   },
   {
     id: '4',
@@ -61,7 +71,9 @@ export const projectsData: Project[] = [
     description: 'アニメのランキングを作成し、シーズンごとのアニメをチェックして、自分のランキングの変化をグラフで楽しめるWEBサイトです。',
     imageUrl: '/projects/anigraph.png',
     techStack: ['Laravel', 'Next.js', 'TypeScript', 'TailwindCSS', 'Firebase'],
-    link: 'https://anigraph.qboad.com/'
+    link: 'https://anigraph.qboad.com/',
+    category: 'web',
+    detailSlug: 'anigraph'
   },
   {
     id: '5',
@@ -69,7 +81,8 @@ export const projectsData: Project[] = [
     description: 'ケイタMaxを操作してボスを倒すことを目指すRPGです。結構難しいです。',
     imageUrl: '/projects/keitamax_rpg.png',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
-    link: 'https://niheikeita.github.io/my-site/'
+    link: 'https://niheikeita.github.io/my-site/',
+    category: 'web'
   },
   {
     id: '6',
@@ -77,7 +90,8 @@ export const projectsData: Project[] = [
     description: '感情を叫びたいのに声にできない人のための、匿名で叫びを投稿できるWEBアプリです。',
     imageUrl: '/projects/sakebina.png',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
-    link: 'https://sakebina.qboad.com/'
+    link: 'https://sakebina.qboad.com/',
+    category: 'web'
   },
   {
     id: '7',
@@ -85,7 +99,8 @@ export const projectsData: Project[] = [
     description: '技術書のインプットを見える化ができるアプリです。',
     imageUrl: '/projects/booklog.png',
     techStack: ['Laravel', 'Next.js', 'TypeScript', 'TailwindCSS'],
-    link: 'https://book-log.qboad.com/'
+    link: 'https://book-log.qboad.com/',
+    category: 'web'
   },
   {
     id: '8',
@@ -93,7 +108,8 @@ export const projectsData: Project[] = [
     description: 'メダルゲーム・クレーンゲームの情報を管理・共有するプラットフォームです。',
     imageUrl: '/projects/gamedb.png',
     techStack: ['Laravel', 'Next.js', 'TypeScript', 'TailwindCSS'],
-    link: 'https://gamedex.qboad.com/'
+    link: 'https://gamedex.qboad.com/',
+    category: 'web'
   },
   {
     id: '100',
@@ -103,7 +119,9 @@ export const projectsData: Project[] = [
     techStack: ['Android', 'Kotlin'],
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai',
     appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3/id6758726429',
-    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai'
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.insuubunkai',
+    category: 'app',
+    seriesId: 'hitasura'
   },
   {
     id: '101',
@@ -112,7 +130,9 @@ export const projectsData: Project[] = [
     imageUrl: '/projects/soinnsuubunkai.webp',
     techStack: ['Android', 'Kotlin'],
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.soinnsuubunnkai&hl=ja',
-    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.soinnsuubunnkai&hl=ja'
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.soinnsuubunnkai&hl=ja',
+    category: 'app',
+    seriesId: 'hitasura'
   },
   {
     id: '102',
@@ -121,7 +141,9 @@ export const projectsData: Project[] = [
     imageUrl: '/projects/bibunn.webp',
     techStack: ['Android', 'Kotlin'],
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibunn&hl=ja',
-    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibunn&hl=ja'
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.bibunn&hl=ja',
+    category: 'app',
+    seriesId: 'hitasura'
   },
   {
     id: '103',
@@ -130,7 +152,9 @@ export const projectsData: Project[] = [
     imageUrl: '/projects/sekibun.webp',
     techStack: ['Android', 'Kotlin'],
     link: 'https://play.google.com/store/apps/details?id=com.iggyapp.sekibunn&hl=ja',
-    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.sekibunn&hl=ja'
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggyapp.sekibunn&hl=ja',
+    category: 'app',
+    seriesId: 'hitasura'
   },
   {
     id: '105',
@@ -140,7 +164,9 @@ export const projectsData: Project[] = [
     techStack: ['iOS'],
     link: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/id6758604047',
     appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/id6758604047',
-    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.qboad.hitasura.lcm'
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.qboad.hitasura.lcm',
+    category: 'app',
+    seriesId: 'hitasura'
   },
   {
     id: '106',
@@ -149,7 +175,9 @@ export const projectsData: Project[] = [
     imageUrl: '/projects/gcd.png',
     techStack: ['iOS'],
     link: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%A4%A7%E5%85%AC%E7%B4%84%E6%95%B0/id6758605688',
-    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%A4%A7%E5%85%AC%E7%B4%84%E6%95%B0/id6758605688'
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%81%B2%E3%81%9F%E3%81%99%E3%82%89%E6%9C%80%E5%A4%A7%E5%85%AC%E7%B4%84%E6%95%B0/id6758605688',
+    category: 'app',
+    seriesId: 'hitasura'
   },
   {
     id: '104',
@@ -158,7 +186,8 @@ export const projectsData: Project[] = [
     imageUrl: '/projects/onihuujinonawa.webp',
     techStack: ['Android', 'Kotlin'],
     link: 'https://play.google.com/store/apps/details?id=com.iggy.catchthedemon&hl=ja',
-    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggy.catchthedemon&hl=ja'
+    googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.iggy.catchthedemon&hl=ja',
+    category: 'app'
   },
 ]
 
