@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Coffee } from 'lucide-react'
 import AnimatedSection from '../../components/AnimatedSection'
-import ProjectCard from '../../components/ProjectCard'
+import ProjectRow from '../../components/list/ProjectRow'
 import Footer from '../../components/Footer'
 import { projectsData, socialLinks } from '../../data/profile'
 
@@ -51,10 +51,10 @@ const WebView: React.FC = () => {
               現在公開中のWebサービスは準備中です。もう少しお待ちください。
             </div>
           ) : (
-            <div className="grid auto-rows-fr gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mx-auto flex max-w-3xl flex-col gap-3">
               {webProjects.map((project) => (
-                <AnimatedSection key={project.id} animation="slide-up" className="h-full">
-                  <ProjectCard project={project} linkLabel="サイトを見る" />
+                <AnimatedSection key={project.id} animation="fade-in">
+                  <ProjectRow project={project} />
                 </AnimatedSection>
               ))}
             </div>

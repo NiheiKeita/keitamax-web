@@ -1,6 +1,6 @@
 import React from 'react'
 import { Project } from '../types'
-import ProjectCard from './ProjectCard'
+import ProjectRow from './list/ProjectRow'
 import AnimatedSection from './AnimatedSection'
 
 interface ProjectsSectionProps {
@@ -21,11 +21,11 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
           </p>
         </AnimatedSection>
 
-        {/* Projects Grid */}
-        <div className="grid auto-rows-fr gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {/* Projects List */}
+        <div className="mx-auto flex max-w-3xl flex-col gap-3">
           {projects.map((project) => (
-            <AnimatedSection key={project.id} animation="slide-up" className="h-full">
-              <ProjectCard project={project} />
+            <AnimatedSection key={project.id} animation="fade-in">
+              <ProjectRow project={project} />
             </AnimatedSection>
           ))}
         </div>
