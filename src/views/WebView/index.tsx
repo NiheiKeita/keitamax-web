@@ -6,10 +6,8 @@ import ProjectRow from '../../components/list/ProjectRow'
 import Footer from '../../components/Footer'
 import { projectsData, socialLinks } from '../../data/profile'
 
-const MobileAppsView: React.FC = () => {
-  const mobileApps = projectsData.filter((project) =>
-    project.techStack.some((tech) => tech === 'Android' || tech === 'iOS')
-  )
+const WebView: React.FC = () => {
+  const webProjects = projectsData.filter((project) => project.category === 'web')
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-amber-100">
@@ -32,29 +30,29 @@ const MobileAppsView: React.FC = () => {
         <section className="container mx-auto px-6">
           <AnimatedSection animation="fade-in" className="text-center">
             <p className="mb-3 text-sm font-semibold tracking-widest text-amber-700">
-              APP DIRECTORY
+              WEB DIRECTORY
             </p>
             <h1 className="mb-4 text-4xl font-bold text-amber-900 lg:text-5xl">
-              Android / iOS アプリ一覧
+              ブラウザで遊べるWebサービス一覧
             </h1>
             <p className="mx-auto max-w-3xl text-lg text-gray-600">
-              各アプリから移動できるように、AndroidとiOS向けのアプリをまとめています。
-              気になるアプリがあればストアリンクからチェックしてみてください。
+              インストール不要、ブラウザからすぐに遊べるWebサービスをまとめています。
+              気になるものがあればリンクからチェックしてみてください。
             </p>
             <div className="mt-6 text-sm font-medium text-amber-800">
-              公開中のアプリ: {mobileApps.length} 件
+              公開中のサービス: {webProjects.length} 件
             </div>
           </AnimatedSection>
         </section>
 
         <section className="container mx-auto mt-16 px-6">
-          {mobileApps.length === 0 ? (
+          {webProjects.length === 0 ? (
             <div className="rounded-2xl border border-amber-100 bg-white/80 p-10 text-center text-amber-900 shadow-sm">
-              現在公開中のアプリは準備中です。もう少しお待ちください。
+              現在公開中のWebサービスは準備中です。もう少しお待ちください。
             </div>
           ) : (
             <div className="mx-auto flex max-w-3xl flex-col gap-3">
-              {mobileApps.map((project) => (
+              {webProjects.map((project) => (
                 <AnimatedSection key={project.id} animation="fade-in">
                   <ProjectRow project={project} />
                 </AnimatedSection>
@@ -69,4 +67,4 @@ const MobileAppsView: React.FC = () => {
   )
 }
 
-export default MobileAppsView
+export default WebView
